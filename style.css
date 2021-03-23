@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 .background-color {
     width: 100%;
     height: 100vh;
@@ -19,16 +18,120 @@
 .container {
     height: 100%;
     width: 80%;
+    margin: auto;
     background-color: white;
-}
-.row {
-    height: 100% ;
-}
-.dx{
-    height: 100%;
-    background-color: red;
+    border: 1px solid black;
 }
 .sx {
+    width: 30%;
+    background-color: lime;
+}
+.dx {
+    width: 70%;
+    background-color: mediumspringgreen;
+}
+.sx , .dx {
+    float: left;
     height: 100%;
-    background-color: blue;
+}
+.bell {
+    width: 45px;
+    height: 45px;
+    border-radius: 40px;
+    background-color: white;
+    color:#00FFFF;
+    padding-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+   
+
+}
+.bell i{
+    font-size: 25px ;
+    text-align: center;
+}
+
+.bell , .new-sms {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+}
+.Nuove-notifiche a {
+    display: block;
+    font-size: 13px;
+}
+.Utente {
+    width: 100%;
+    height: 70px;
+    background-color:#F0F0F0;
+    padding: 15px;
+    font-size: 15px;
+}
+.Utente .IconE {
+    margin-top: 15px; 
+    float: right;
+    vertical-align: middle;
+    align-items: center;
+}
+.IconE i {
+    font-size: 15px;
+    margin-right: 15px ;
+}
+.Nuove-notifiche {
+    width: 100%;
+    height: 70px;
+    background-color: #00FFFF;
+    padding: 10px;
+}
+.Motore-ricercaChat {
+    width: 100%;
+    height: 60px;
+    background-color:white;
+    padding: 10px;
+}
+.buttons-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid lightgray;
+}
+button {
+    width: 10%;
+    height: 100%;
+    padding-left: 5px;
+    border: none;
+    background-color:white;
+
+}
+.Utente img {
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+}
+.Utente img , p {
+    display: inline-block;
+    vertical-align: middle;
+}
+input {
+    width: 88%;
+    height: 100%;
+    border: none;
+}
+.lista-chat {
+    width: 100%;
+    height: calc(100% - 60px - 70px - 70px);
+    background-color: red;
+}
+
+.with-who {
+    width: 100%;
+    height: 70px;
+    background-color:#F0F0F0;
+    border-left: 1px solid lightgray;
+}
+
+.chat-zone {
+    width: 100%;
+    height: calc(100% - 70px);
+    background-image: url(./img/mine.jpg);
 }

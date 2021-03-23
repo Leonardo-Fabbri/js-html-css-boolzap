@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -12,18 +12,64 @@
 </head>
 <body class="background-color">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-4 sx">
+        <div class="sx"> 
+            <!-- Utente -->
+            <div class="Utente"> 
+                <!-- img --> 
+                <img src="./img/kkk.jfif" alt="">
+                <p>Leonardo </p>
+                <!--  icone -->
+                <div class="IconE">
+                    <i class="fas fa-circle-notch"></i>
+                    <i class="fas fa-comment-alt"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
 
             </div>
-            <div class="col-xs-8 dx">
+            <!-- ALERT NUOVE NOTIFICHE -->
+            <div class="Nuove-notifiche">
+                <div class="bell">
+                    <i class="far fa-bell-slash"> </i>
+                </div>
+                <p class="new-sms"> Ricevi notifiche di nuovi messaggi <br><a href="">Attiva modifiche desktop</a></p>
+                
+                
+
+            </div>
+            <!-- MOTORE DI RICERCA CHAT PERDUTE O NUOVE -->
+            <div class="Motore-ricercaChat">
+                <div class="buttons-container">
+                    <button><i class="fas fa-search"></i></button>
+                    <input type="text" placeholder="Carica o Inizia una nuova chat">
+                    
+                    
+                </div>
+               
+            </div>
+            <!-- LISTA CHAT ATTIVE AL MOMENTO -->
+            <div class="lista-chat">
 
             </div>
 
         </div>
-        
+
+
+        <!-- blocco-chat-destro -->
+        <div class="dx">
+            <div class="with-who">
+                <div class="who">
+
+                </div>
+
+            </div>
+            <div class="chat-zone">
+
+            </div>
+
+        </div>
 
     </div>
+    
     
     
     <script src="Javascript.js"></script>
