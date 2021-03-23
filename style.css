@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background-color {
+    width: 100%;
+    height: 100vh;
+    padding: 15px;
+    background-image:  linear-gradient(to bottom,
+    #009688 0px,
+    #009688 15vh,
+    #DDDBD1 15vh,  /*questa è una sfumatura*/
+    #D2DBDC 100%
+    )
+    /* da sopra a sotto, applico una prima fascia verde che ocupa il 15% del viewport, rimanente .... */
+}
+.container {
+    height: 100%;
+    width: 80%;
+    background-color: white;
+}
+.row {
+    height: 100% ;
+}
+.dx{
+    height: 100%;
+    background-color: red;
+}
+.sx {
+    height: 100%;
+    background-color: blue;
+}
