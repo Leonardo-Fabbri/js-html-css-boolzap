@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 .background-color {
     width: 100%;
@@ -117,7 +118,7 @@ input {
 .lista-chat {
     width: 100%;
     height: calc(100% - 60px - 70px - 70px);
-    background-color: red;
+    background-color: whitesmoke; 
 }
 .with-who {
     width: 100%;
@@ -131,8 +132,8 @@ input {
     width: 100%;
     height: calc(100% - 130px);
     background-image: url(./img/mine.jpg);
-    scroll-behavior: smooth;
-    
+    scroll-behavior: smooth; 
+    position: relative;
 }
 
 .who img  {
@@ -192,3 +193,38 @@ input {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.CHATverde-Utente {
+    height: 52px;
+    width: 300px;
+    background-color: #98FB98;
+    border: 1px solid lightgray;
+    position: absolute;
+    right: 80px;
+    top: 50px;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.add {
+    top: 110px;
+}
+
+.CHATgray-other {
+    width: 150px;
+    height: 52px;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    left: 80px; 
+    top: 200px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+
+
+
+
