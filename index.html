@@ -14,11 +14,11 @@
 </head>
 <body class="background-color">
     <div class="container">
-        <div class="sx"> 
+        <div  id="root" class="sx"> 
             <!-- Utente -->
             <div class="Utente"> 
                 <!-- img --> 
-                <img src="./img/kkk.jfif" alt="">
+                <img src="./img/mine.jfif" alt="">
                 <p>Leonardo </p>
                 <!--  icone -->
                 <div class="IconE">
@@ -51,7 +51,11 @@
 
             <!-- LISTA CHAT ATTIVE AL MOMENTO  con js-->
             <div class="lista-chat">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam repellendus tenetur consequatur itaque corrupti et, distinctio quidem debitis error officia labore! Sint qui beatae tempore, commodi consequatur ut deserunt quis.</p>
+                <div class="utenti">
+                    <img :src="phPROFILE" alt="">
+                    <p>{{nome}}</p>
+
+                </div>
 
             </div>
 

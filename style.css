@@ -127,7 +127,6 @@ input {
     background-color: whitesmoke; 
     overflow-y: scroll;
 }
-
 .lista-chat p {
     font-size: 30px;
 }
@@ -147,7 +146,6 @@ input {
     position: relative;
     overflow-y: scroll;
 }
-
 .who img  {
     width: 50px;
     border-radius: 50%;
@@ -155,17 +153,14 @@ input {
     border: 1px solid lightgray;
     display: inline-block;
 }
-
 .who img , p {
     display: inline-block;
     vertical-align: middle;
 }
-
 .who span {
     font-size: 13px;
     color: gray;
 }
-
 .dx-ICONS {
     position: absolute;
     right: 30px;
@@ -173,12 +168,10 @@ input {
     vertical-align: middle;
     align-items: center;
 }
-
 .dx-ICONS i {
     margin-left: 15px;
     vertical-align: middle;
 }
-
 .chatBar {
     padding: 15px;
     width: 100%;
@@ -186,15 +179,13 @@ input {
     bottom: 0px;
     background-color: #F0F0F0;
 }
-
 .chatBar i {
     font-size: 20px;
     display: inline-block;
     align-items: center;
     vertical-align: middle;
 
-}
-    
+} 
 .chatBar input {
     width: calc(100% - 90px);
     height: 100%;
@@ -205,7 +196,6 @@ input {
     margin-left: 10px;
     margin-right: 10px;
 }
-
 .CHATverde-Utente {
     height: 52px;
     width: 300px;
@@ -219,11 +209,9 @@ input {
     border-radius: 4px;
     vertical-align: middle;
 }
-
 .add {
     top: 110px;
 }
-
 .CHATgray-other {
     width: 150px;
     height: 52px;
@@ -235,6 +223,26 @@ input {
     padding: 10px;
     font-size: 12px;
 }
+
+.utenti {
+    margin-top: 10px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    padding: 15px;
+    position: relative;
+}
+.utenti img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.utenti p {
+    position: absolute;
+    top: 25px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
 
 
 
