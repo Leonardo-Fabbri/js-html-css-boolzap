@@ -20,7 +20,7 @@
     width: 80%;
     margin: auto;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid lightgray;
 }
 .sx {
     width: 30%;
@@ -44,14 +44,11 @@
     text-align: center;
     vertical-align: middle;
     align-items: center;
-   
-
 }
 .bell i{
     font-size: 25px ;
     text-align: center;
 }
-
 .bell , .new-sms {
     display: inline-block;
     vertical-align: middle;
@@ -65,7 +62,7 @@
     width: 100%;
     height: 70px;
     background-color:#F0F0F0;
-    padding: 15px;
+    padding: 10px;
     font-size: 15px;
 }
 .Utente .IconE {
@@ -122,16 +119,76 @@ input {
     height: calc(100% - 60px - 70px - 70px);
     background-color: red;
 }
-
 .with-who {
     width: 100%;
     height: 70px;
     background-color:#F0F0F0;
     border-left: 1px solid lightgray;
+    padding: 10px;
+    position: relative;
 }
-
 .chat-zone {
     width: 100%;
-    height: calc(100% - 70px);
+    height: calc(100% - 130px);
     background-image: url(./img/mine.jpg);
+    scroll-behavior: smooth;
+    
+}
+
+.who img  {
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.who img , p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.who span {
+    font-size: 13px;
+    color: gray;
+}
+
+.dx-ICONS {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.dx-ICONS i {
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.chatBar {
+    padding: 15px;
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    background-color: #F0F0F0;
+}
+
+.chatBar i {
+    font-size: 20px;
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+
+}
+    
+.chatBar input {
+    width: calc(100% - 90px);
+    height: 100%;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
