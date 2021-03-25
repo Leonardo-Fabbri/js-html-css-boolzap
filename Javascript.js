@@ -1,21 +1,12 @@
 var app = new Vue ( {
-    el: " #root",
+    el: "#root",
     data:{
-        phPROFILE: [
-            ".//img/avatar_1.jpg",
-            
-            
-
-
-
-        ],
-        nome: "Michele", // un array per ogni blocco-utente, un arrey per ogni foto e un arrey per opgni nome
-        
+        contactActive: ,
         contacts: [
             //MICHELE
             {
                 name:"Michele",
-                avatar: "_1",
+                avatar: "./img/avatar_1.jpg",
                 visible: true,
                 messages: [
                     {
@@ -38,7 +29,7 @@ var app = new Vue ( {
             //FABIO
             {
                 name: 'Fabio',
-                avatar: '_2',
+                avatar: './img/avatar_2.jpg',
                 visible: true,
                 messages: [
                     {
@@ -61,7 +52,7 @@ var app = new Vue ( {
             //SAMUELE
             {
                 name: 'Samuele',
-                avatar: '_3',
+                avatar: './img/avatar_3.jpg',
                 visible: true,
                 messages:[
                     {
@@ -84,7 +75,7 @@ var app = new Vue ( {
             //LUISA
             {
                 name: 'Luisa',
-                avatar: '_4',
+                avatar: './img/avatar_4.jpg',
                 visible: true,
                 messages: [
                     {

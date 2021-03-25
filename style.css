@@ -195,24 +195,34 @@ input {
     padding: 10px;
     margin-left: 10px;
     margin-right: 10px;
+ }
+
+.chat-zone ul  {
+    margin-top: 50px
 }
-.CHATverde-Utente {
-    height: 52px;
-    width: 300px;
-    background-color: #98FB98;
-    border: 1px solid lightgray;
-    position: absolute;
-    right: 80px;
-    top: 50px;
+.sent {
+    max-width: 250px ;
+    max-height: 100px;
     padding: 10px;
-    font-size: 12px;
+    background-color: #98FB98;
     border-radius: 4px;
-    vertical-align: middle;
-}
+    margin-bottom: 20px;
+    margin-left: 450px;
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    float: left;
+} 
+ .status , .date {
+    font-size: 10px;
+ }
+
 .add {
     top: 110px;
 }
-.CHATgray-other {
+.received {
+    float: left;
+    clear: both;
     width: 150px;
     height: 52px;
     background-color: white;
@@ -222,6 +232,7 @@ input {
     top: 200px;
     padding: 10px;
     font-size: 12px;
+    list-style: none;
 }
 
 .utenti {

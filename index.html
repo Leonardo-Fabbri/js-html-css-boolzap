@@ -13,8 +13,8 @@
     <title>Document</title>
 </head>
 <body class="background-color">
-    <div class="container">
-        <div  id="root" class="sx"> 
+    <div class="container" id="root">
+        <div  class="sx"> 
             <!-- Utente -->
             <div class="Utente"> 
                 <!-- img --> 
@@ -50,12 +50,15 @@
             </div>
 
             <!-- LISTA CHAT ATTIVE AL MOMENTO  con js-->
-            <div class="lista-chat">
-                <div class="utenti">
-                    <img :src="phPROFILE" alt="">
-                    <p>{{nome}}</p>
-
-                </div>
+            <div id="root" class="lista-chat">
+                <ul>
+                    <li v-for="ut in contacts" class="utenti">
+                        <div  class="">
+                            <img :src="ut.avatar" alt="" class=""> </img>
+                            <p class="">{{ut.name}}</p>
+                        </div> 
+                    </li>
+                </ul>
 
             </div>
 
@@ -78,25 +81,18 @@
             </div>
             <!-- chat-space -->
             <div class="chat-zone">
-                <div class="CHATverde-Utente">
-                    <p>Hai portato a spasso il cane?</p>
-
-                </div>
-                <div class="CHATverde-Utente add">
-                    <p>Ricorda di dargli da mangiare</p>
-
-                </div>
-
-                <div class="CHATgray-other">
-                    <p>Tutto fatto!</p>
-
-                </div>
-
-
-            
+                <ul v-for="message in contacts[contactActive].messages">
+                     <li  :class="(message.status == 'sent') ? 'message sent' : 'message received'"> 
+                        <span>{{message.text}}</span>
+                        <!-- <span class="date" >{{message.date}}</span>
+                        <span >{{message.status}}</span> -->
+                    </li>
+                </ul>
+        
                 
+                   
 
-     
+               
             </div>
             <div class="chatBar">
                 <i class="far fa-grin-alt"></i>
