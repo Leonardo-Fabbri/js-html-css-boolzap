@@ -98,9 +98,8 @@
             </div>
             <div class="chatBar">
                 <i class="far fa-grin-alt"></i>
-                <input @keyUp.enter="addtochat()" type="text" placeholder=" Scrivi un nuovo messaggio">
+                <input v-model ="newMessage"  @keyUp.enter="addtochat" type="text" placeholder=" Scrivi un nuovo messaggio">
                 <i class="fas fa-microphone"></i>
-
             </div>
 
         </div>

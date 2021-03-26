@@ -15,7 +15,7 @@ boh2.boh()
 var app = new Vue ( {
     el: "#root",
     data:{
-        
+        newMessage:"",
 
         contactActive: 0,
         contacts: [
@@ -119,20 +119,24 @@ var app = new Vue ( {
         },
 
         addtochat: function(){
-           testoNuovoMessaggio = " ";
 
            //creo il nuovo messaggio con la struttura dei messaggi
-           let nuovoMessaggioObj = {
+           let nuovoMessaggio = {
             date: '10/01/2020 15:30:55',
-            text: testoNuovoMessaggio ,           //salvo il testo recuperoato dall'input dentro il messaggio (text property)
+            text: this.newMessage ,           
             status: 'sent', 
             //attenzione ricordarsi, messaggio inviato (status)
+           }
+           let nuovarisposta = {
+               text:"ok",
+               status: "received",
            }
           
            //sapere a quale chat mi devo riferire --> indice contanctActive
            //aggiungo l'oggetto creato precedentemente dentro la lista dei messaggi di quel contatto
-           this.contacts[this.contactActive].messages.push(nuovoMessaggioObj);
+           this.contacts[this.contactActive].messages.push(nuovoMessaggio);
            this.testoNuovoMessaggio = " ";
+           this.contacts[this.contactActive].messages.push(nuovarisposta);
            
            
            
