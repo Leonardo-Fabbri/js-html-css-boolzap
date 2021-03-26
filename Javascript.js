@@ -1,7 +1,23 @@
+var boh=1;
+var boh2= {
+    name:"michele",
+    boh: function() {
+        this.ciao()
+
+    },
+    ciao: function() {
+
+    }
+
+}
+boh2.boh()
+
 var app = new Vue ( {
     el: "#root",
     data:{
-        contactActive: ,
+        
+
+        contactActive: 0,
         contacts: [
             //MICHELE
             {
@@ -69,7 +85,12 @@ var app = new Vue ( {
                         date: '28/03/2020 16:15:22',
                         text: 'Ah scusa!',
                         status: 'received'
-                    }
+                    },
+                    {
+                        date: '28/03/2020 10:20:10',
+                        text: 'Sicuro di non aver sbagliato chat?',
+                        status: 'sent'
+                    },
                 ],
             },
             //LUISA
@@ -91,5 +112,37 @@ var app = new Vue ( {
                 ],
             },
         ]
-    },     
+    },  
+    methods:  {
+        WHO:function(index) {
+            this.contactActive = index;
+        },
+
+        addtochat: function(){
+           testoNuovoMessaggio = " ";
+
+           //creo il nuovo messaggio con la struttura dei messaggi
+           let nuovoMessaggioObj = {
+            date: '10/01/2020 15:30:55',
+            text: testoNuovoMessaggio ,           //salvo il testo recuperoato dall'input dentro il messaggio (text property)
+            status: 'sent', 
+            //attenzione ricordarsi, messaggio inviato (status)
+           }
+          
+           //sapere a quale chat mi devo riferire --> indice contanctActive
+           //aggiungo l'oggetto creato precedentemente dentro la lista dei messaggi di quel contatto
+           this.contacts[this.contactActive].messages.push(nuovoMessaggioObj);
+           this.testoNuovoMessaggio = " ";
+           
+           
+           
+           
+        }
+
+          
+
+    }
 })
+
+
+

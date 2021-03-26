@@ -52,7 +52,9 @@
             <!-- LISTA CHAT ATTIVE AL MOMENTO  con js-->
             <div id="root" class="lista-chat">
                 <ul>
-                    <li v-for="ut in contacts" class="utenti">
+                    <li v-for="(ut, index) in contacts"
+                    v-on:click="WHO(index)"
+                     class="utenti" >
                         <div  class="">
                             <img :src="ut.avatar" alt="" class=""> </img>
                             <p class="">{{ut.name}}</p>
@@ -69,8 +71,8 @@
         <div class="dx">
             <div class="with-who">
                 <div class="who">
-                    <img src="./img/avatar_1.jpg" alt="">
-                    <p>Michele <br> <span>Ultimo accesso oggi alle... </span></p>
+                    <img :src=" contacts[contactActive].avatar" :alt="contacts[contactActive].name">
+                    <p>{{contacts[contactActive].name}} <br> <span>Ultimo accesso oggi alle... </span></p>
                 </div>
                 <div class="dx-ICONS">
                     <i class="fas fa-search"></i>
@@ -96,7 +98,7 @@
             </div>
             <div class="chatBar">
                 <i class="far fa-grin-alt"></i>
-                <input type="text" placeholder=" Scrivi un nuovo messaggio">
+                <input @keyUp.enter="addtochat()" type="text" placeholder=" Scrivi un nuovo messaggio">
                 <i class="fas fa-microphone"></i>
 
             </div>
